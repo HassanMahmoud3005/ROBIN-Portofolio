@@ -1,0 +1,707 @@
+* {
+  box-sizing: border-box;
+  list-style: none;
+}
+#header {
+  overflow-x: hidden;
+}
+#about {
+  overflow-x: hidden;
+}
+#services {
+  overflow-x: hidden;
+}
+#portfolio {
+  overflow-x: hidden;
+}
+#price {
+  overflow-x: hidden;
+}
+#testimonials {
+  overflow-x: hidden;
+}
+#blog {
+  overflow-x: hidden;
+}
+#contact {
+  overflow-x: hidden;
+}
+
+.pink-color {
+  color: #ff206e;
+}
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-track {
+  background-color: #000;
+}
+::-moz-scrollbar-track {
+  background-color: #000;
+}
+::-o-scrollbar-track {
+  background-color: #000;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ff206e;
+  border-radius: 10px;
+}
+::-moz-scrollbar-thumb {
+  background-color: #ff206e;
+  border-radius: 10px;
+}
+::-o-scrollbar-thumb {
+  background-color: #ff206e;
+  border-radius: 10px;
+}
+
+/*========== End global ==========*/
+
+#header {
+  background-image: url("../img/main4.jpeg");
+  min-height: 100vh;
+  background-position: 50% 15%;
+  transition: 2s;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-color: black;
+}
+#header .navbar {
+  background-color: black;
+}
+#header .navbar .nav-link {
+  color: white;
+  transition: 0.5s;
+}
+#header .navbar .container-fluid .navbar-nav {
+  position: relative;
+}
+#header .navbar .container-fluid .navbar-nav .nav-item .active {
+  color: #ff206e;
+  position: relative;
+  transition: 1s;
+}
+#header .navbar .container-fluid .navbar-nav .nav-item .active:after {
+  content: " ";
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  border-bottom: 3px solid #ff206e;
+  transition: 1s;
+}
+#header .navbar .container-fluid .navbar-nav .nav-item .nav-link:hover {
+  color: #ff206e;
+}
+
+/*========== End Navbar ==========*/
+
+#header .container-fluid h1 {
+  font-size: 65px;
+  font-weight: 700;
+}
+
+#header .container-fluid .main-logo li a i {
+  border: 1px solid rgba(255, 255, 255, 0.507);
+  border-radius: 50%;
+  padding: 10px;
+  font-size: 18px;
+  color: white;
+  transition: 0.5s;
+}
+
+#header .container-fluid .main-logo li a i:hover {
+  background-color: #ff206e;
+}
+#header .cont-text {
+  padding: 180px 80px;
+}
+
+/*========== End header ==========*/
+
+#about {
+  background-image: url("../img/light_dot.jpg");
+  color: black;
+  text-align: center;
+  padding: 80px 0;
+}
+
+.title {
+  position: relative;
+  font-size: 55px;
+  font-weight: 700;
+}
+.title::after {
+  content: "ABOUT";
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgba(0, 0, 0, 0.055);
+  font-size: 90px;
+}
+
+#about .part-right {
+  text-align: left;
+}
+
+/*========== End about ==========*/
+
+#services {
+  color: black;
+  text-align: center;
+  background-image: url("../img/dark_dot.jpg");
+  padding: 80px 0;
+}
+
+#services .title::after {
+  content: "SERVICES";
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgba(255, 255, 255, 0.055);
+  font-size: 90px;
+}
+#services .container .row .item {
+  background-color: white;
+  color: black;
+  padding: 40px 10px 20px 10px;
+  position: relative;
+  transition: 0.5s;
+  margin: 10px 0;
+}
+#services .container .row .item:hover i {
+  color: #ff206e;
+}
+
+#services .container .row .item span {
+  background-color: black;
+  padding: 15px;
+  border-radius: 50%;
+  border: 1px solid white;
+  position: absolute;
+  top: -10%;
+  left: 50%;
+  transform: translateX(-50%);
+  filter: drop-shadow(0 0 5px black);
+  transition: 0.5s;
+}
+
+#services .item .icon i {
+  color: white;
+  font-size: 25px;
+  transition: 0.5s;
+}
+#services .container .main .row,
+#services .container .main .row .item,
+#services .container .main {
+  position: relative;
+}
+
+#services .container .main:after {
+  content: " ";
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  width: 20px;
+  height: 2px;
+  background-color: #ff206e;
+  transform: translate(-50%, -50%);
+}
+#services .container .item:hover .row .main:after {
+  width: 30px;
+}
+
+/*========== End Services ==========*/
+
+#portfolio {
+  text-align: center;
+  padding: 80px 0;
+  background-image: url("../img/light_dot.jpg");
+}
+
+#portfolio .title {
+  color: black;
+}
+#portfolio .title::after {
+  content: "PORTFILO";
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgba(0, 0, 0, 0.055);
+  font-size: 90px;
+}
+#portfolio ul li a {
+  transition: 0.5s;
+}
+
+#portfolio ul li a:hover {
+  color: #ff206e !important;
+}
+#portfolio .home-slider {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+#portfolio .slider {
+  position: absolute;
+  width: 95%;
+  height: 95%;
+  background-color: #f8f8f8;
+  top: -100%;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: 0.5s;
+}
+
+#portfolio .slider .icon span {
+  background-color: black;
+  border-radius: 50%;
+  padding: 6px;
+  transition: 0.5s !important;
+}
+#portfolio .slider .icon span:hover {
+  background-color: #ff206e;
+}
+
+#portfolio .slider .icon i {
+  font-size: 18px;
+  color: white;
+}
+
+#portfolio .home-slider:hover .slider {
+  top: 0;
+}
+
+#portfolio img {
+  height: 250px !important;
+}
+
+#portfolio .slider {
+  background-color: whitesmoke;
+}
+
+/*========== End portofolio ==========*/
+
+#price {
+  text-align: center;
+  background-image: url("../img/light_dot.jpg");
+}
+
+#price .title::after {
+  content: "PRICE";
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgba(0, 0, 0, 0.055);
+  font-size: 90px;
+}
+
+#price .card {
+  overflow: hidden;
+}
+
+#price .card .home-up {
+  background-color: black;
+  height: 200px;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+#price .card .home-up .price {
+  font-size: 80px;
+  color: #ff206e;
+  font-weight: 700;
+}
+
+#price .card .home-up .price span {
+  color: white;
+  font-size: 30px;
+}
+
+#price .card .home-up .popular {
+  background-color: white;
+  display: block;
+  width: 100%;
+  font-size: 20px;
+  position: absolute;
+  transform: rotate(45deg);
+  left: 35%;
+  top: 30%;
+}
+
+#price .card .card-body button {
+  padding: 5px 40px;
+  background-color: black !important;
+  transition: 0.5s !important;
+  border: 0;
+}
+#price .card .card-body button:hover {
+  background-color: #ff206e !important;
+  color: white !important;
+  scale: 1.05;
+}
+
+/*========== End Price ==========*/
+#timer {
+  padding: 80px 0;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  margin: 80px 0;
+  background-image: url("../img/light_dot.jpg");
+}
+
+#timer .img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/man-cafe.jpg);
+  background-position: top;
+  background-size: cover;
+  filter: blur(1px);
+  z-index: 1;
+  background-attachment: fixed;
+}
+#timer .cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.61);
+  z-index: 2;
+}
+#timer .col {
+  position: relative;
+  z-index: 5;
+}
+#timer i {
+  color: white;
+  font-size: 50px;
+}
+
+#timer .col p {
+  color: white;
+  font-size: 22px;
+}
+
+/*========== End Timer ==========*/
+
+#testimonials {
+  text-align: center;
+  padding: 80px 0;
+  margin: 80px 20px;
+  background-image: url("../img/light_dot.jpg");
+}
+
+#testimonials .title:after {
+  content: "TESTIMONIALS";
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgba(0, 0, 0, 0.055);
+  font-size: 90px;
+}
+#testimonials .carousel {
+  margin-top: 80px;
+  padding-top: 30px;
+}
+#testimonials .border-caro {
+  border: 1px solid rgba(0, 0, 0, 0.274);
+  border-radius: 5px;
+}
+
+#testimonials .carousel-inner {
+  position: relative;
+  overflow: unset;
+}
+
+#testimonials .border-caro .carousel-item img {
+  width: 8%;
+  background-size: cover;
+  position: absolute;
+  bottom: 110%;
+  left: 50%;
+  transform: translateX(-50%);
+  filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.397));
+}
+#testimonials .border-caro .carousel-item h5 {
+  animation: moving 1s 1s linear;
+  scale: 1;
+}
+#testimonials .border-caro .carousel-item .bor {
+  position: relative;
+  font-size: 16px;
+}
+
+@keyframes moving {
+  0% {
+    scale: 1;
+  }
+  50% {
+    scale: 1.1;
+  }
+  100% {
+    scale: 1;
+  }
+}
+
+#testimonials .border-caro .carousel-item .bor:after {
+  border-bottom: 1px solid #ff206e;
+  content: " ";
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30px;
+  position: absolute;
+}
+
+/*========== End Testimonials ==========*/
+
+#blog {
+  text-align: center;
+  background-image: url("../img/light_dot.jpg");
+}
+
+#blog .title:after {
+  content: "BLOG";
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgba(0, 0, 0, 0.055);
+  font-size: 90px;
+}
+#blog .card {
+  margin: 50px 0;
+}
+#blog .card .card-body {
+  position: relative;
+}
+
+#blog .card .card-body .circle-book {
+  position: absolute;
+  bottom: 91%;
+  right: 20px;
+  z-index: 5;
+  filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.466));
+  transition: 0.5s;
+}
+#blog .card .card-body .circle-book:hover {
+  color: #ff206e;
+  cursor: pointer;
+}
+
+#blog .card .card-body .circle-book i {
+  padding: 20px;
+  border-radius: 50%;
+  box-shadow: 0 0 4px black;
+  font-size: 16px;
+  background-color: white;
+}
+
+/*========== End Blog ==========*/
+#contact {
+  text-align: center;
+  background-image: url("../img/dark_dot.jpg");
+  padding: 80px 0;
+}
+#contact .title {
+  color: white;
+}
+
+#contact .title:after {
+  content: "GET IN TOUCH";
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgba(255, 255, 255, 0.158);
+  font-size: 90px;
+}
+
+#contact .item input,
+#contact .item textarea {
+  background-color: black;
+  border: transparent;
+  border-bottom: 1px solid #666;
+  color: white;
+  width: 100%;
+}
+
+#contact .item input::placeholder,
+#contact .item textarea::placeholder {
+  color: rgb(255, 0, 149);
+}
+
+#contact .item button {
+  margin-left: -15px;
+}
+
+#footer {
+  background: linear-gradient(black, #222);
+  box-shadow: 0 0 10px red;
+}
+
+@media screen and (max-width: 992px) {
+  body {
+    overflow-x: hidden;
+  }
+  #header {
+    background-image: url("../img/main4.jpeg");
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    transition: 2s;
+    width: 100%;
+    background-attachment: fixed;
+  }
+
+  #header {
+    overflow-x: hidden;
+  }
+  #about {
+    overflow-x: hidden;
+  }
+  #services {
+    overflow-x: hidden;
+  }
+  #portfolio {
+    overflow-x: hidden;
+  }
+  #price {
+    overflow-x: hidden;
+  }
+  #testimonials {
+    overflow-x: hidden;
+  }
+  #blog {
+    overflow-x: hidden;
+  }
+  #contact {
+    overflow-x: hidden;
+  }
+
+  #header .navbar .container-fluid .navbar-nav .nav-item .active:after {
+    width: 10%;
+  }
+
+  #header .text {
+    margin-left: -50px;
+  }
+
+  #contact .paragraph {
+    padding-top: 40px;
+  }
+
+  #contact .item {
+    margin-bottom: 20px;
+  }
+
+  #about .part-right {
+    margin-top: 50px;
+  }
+
+  #services .container .main:after {
+    content: " ";
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    width: 20px;
+    height: 2px;
+    background-color: #ff206e;
+    transform: translate(-50%, -50%);
+  }
+  #testimonials .border-caro .carousel-item img {
+    width: 18%;
+    bottom: 105%;
+  }
+
+  #contact .item input,
+  #contact .item textarea {
+    width: 90%;
+  }
+
+  #contact .item button {
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 200px) and (max-width: 470px) {
+  #testimonials .title::after {
+    font-size: 40px;
+    top: 20px;
+    color: rgba(0, 0, 0, 0.158);
+    line-height: 200px;
+  }
+  #header {
+    background-image: url("../img/main4.jpeg");
+    min-height: 100vh;
+    background-size: cover;
+    background-position: 65% 15%;
+    transition: 2s;
+    width: 100%;
+    background-attachment: fixed;
+  }
+
+  #portfolio .title::after {
+    font-size: 70px;
+    color: rgba(0, 0, 0, 0.11);
+  }
+  #services .title::after {
+    font-size: 70px;
+    color: rgba(255, 255, 255, 0.103);
+  }
+  #price .title::after {
+    color: rgba(0, 0, 0, 0.158);
+  }
+
+  #testimonials .border-caro .carousel-item img {
+    width: 35%;
+    bottom: 105%;
+  }
+
+  #testimonials .border-caro .carousel-item .caption {
+    font-size: 16px;
+    width: 100%;
+  }
+
+  #header .navbar .container-fluid .navbar-nav .nav-item .active:after {
+    width: 10%;
+  }
+
+  #services .container .main:after {
+    content: " ";
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    width: 20px;
+    height: 2px;
+    background-color: #ff206e;
+    transform: translate(-50%, -50%);
+  }
+}
+
+ul button.active {
+  color: black;
+}
+.btn-contact {
+  transition: 0.5s !important;
+  font-weight: 600;
+}
+
+.btn-contact:hover {
+  background-color: #ff206e !important;
+  color: white !important;
+}
